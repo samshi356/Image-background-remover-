@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background Remover - Slazzer Style</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+  <header>
+    <h1>AI Background Remover</h1>
+    <p>Remove image backgrounds instantly — free and automatic</p>
+  </header>
+
+  <main>
+    <form method="POST" enctype="multipart/form-data" class="upload-box">
+      <input type="file" name="image" required>
+      <button type="submit">Remove Background</button>
+    </form>
+
+    {% if image_url %}
+    <div class="result">
+      <h2>Background Removed ✅</h2>
+      <img src="{{ image_url }}" alt="Result Image">
+      <a href="{{ image_url }}" download><button>Download</button></a>
+    </div>
+    {% endif %}
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+  </main>
+
+  <footer>
+    <p>© 2025 Your AI Tool</p>
+  </footer>
+</body>
+</html>
