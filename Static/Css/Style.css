@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f9fc;
+  color: #333;
+}
+header {
+  background: #0052cc;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+header h1 {
+  font-size: 2.2rem;
+}
+header p {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+.upload-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.upload-box input[type="file"] {
+  width: 100%;
+  padding: 15px;
+  border: 2px dashed #ccc;
+  margin-bottom: 20px;
+}
+.upload-box button {
+  background: #0052cc;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.result {
+  margin-top: 30px;
+}
+.result img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.result button {
+  margin-top: 10px;
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+}
+.error {
+  color: red;
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  background: #e0eafc;
+}
